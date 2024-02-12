@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Flowers</title>
+    <style>
+        /* Container for the 3D flower */
+        .flower-container {
+            perspective: 600px;
+        }
+
+        /* Styling for the flower */
+        .flower {
+            width: 100px;
+            height: 150px;
+            margin: 50px;
+            position: relative;
+            transform-style: preserve-3d;
+            transform: rotateX(45deg);
+        }
+
+        /* Petals of the flower */
+        .petal {
+            position: absolute;
+            width: 50px;
+            height: 100px;
+            background-color: pink;
+            transform-origin: 50% 100%;
+        }
+
+        .petal:nth-child(even) {
+            transform: rotate(45deg);
+        }
+
+        .petal:nth-child(odd) {
+            transform: rotate(-45deg);
+        }
+    </style>
+</head>
+<body>
+
+<!-- Container for the 3D flower -->
+<div class="flower-container">
+    <!-- Flower with petals -->
+    <div class="flower">
+        <!-- Petals -->
+        <div class="petal"></div>
+        <div class="petal"></div>
+        <div class="petal"></div>
+        <div class="petal"></div>
+        <div class="petal"></div>
+    </div>
+</div>
+
+</body>
+</html>

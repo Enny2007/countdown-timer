@@ -1,0 +1,24 @@
+.forecast {
+    margin: 20px;
+    padding: 0.3cm;
+    background-color: #935bcb;
+  }
+  
+  .forecast h1,
+  .day-forecast {
+    margin: 20PX;
+    padding: 0.9rem;
+    font-size: 1.2rem;
+  }
+  
+  .day-forecast {
+    background: right/contain content-box border-box no-repeat
+      url('/media/examples/rin.svg') rgb(29, 209, 241);
+  }
+  
+  .day-forecast > h2,
+  .day-forecast > p {
+    margin: 20PX;
+    font-size: 1rem;
+  }
+  
